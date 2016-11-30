@@ -5,7 +5,14 @@
 $(document).ready(function() {
   $('#sky').jQlouds();
 });
-
+$('#sky').jQlouds({
+  minClouds: 3, // minimum amount of clouds
+  maxClouds: 5, // maximum amount of clouds
+});
 $('#sky').jQlouds({
   wind: true
+});
+$('#sky').jQlouds({
+  maxWidth: 113, // max image's width
+  maxHeight: 48, // amx image's height
 });
